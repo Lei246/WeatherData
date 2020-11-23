@@ -5,7 +5,7 @@
 using namespace std;
 typedef std::chrono::high_resolution_clock Clock;
 
-//delare a structure so we can work with different types of data later
+//Delare a structure so we can work with different types of data later
 struct s
 {
 	string date;
@@ -18,8 +18,8 @@ struct s
 }s_var[300];
 
 
-//Bubble Sort Functions //it is a fast sorting method for a almost sorted array.
-  //swap the positions of two elements
+//Bubble Sort Functions //It is a fast sorting method for a almost sorted array.
+  //Swap the positions of two elements
 void swap(s* xp, s* yp)
 {
 	s temp = *xp;
@@ -28,8 +28,8 @@ void swap(s* xp, s* yp)
 }
 
 
-  //swap neighborhood elements if they are in wrong order
-  //sort mean temprature_in from hottest to coldest
+  //Swap neighborhood elements if they are in wrong order
+  //Sort mean temprature_in from hottest to coldest
 void bubbleSorttempin(s s_var[], int n)
 {
 	int i, j;
@@ -45,7 +45,7 @@ void bubbleSorttempin(s s_var[], int n)
 	}
 }
 
-  //sort mean temprature_out from hottest to coldest
+  //Sort mean temprature_out from hottest to coldest
 void bubbleSorttempout(s s_var[], int n)
 {
 	int i, j;
@@ -62,7 +62,7 @@ void bubbleSorttempout(s s_var[], int n)
 }
 
 
- //sort mean humidity_in from driest to humidest
+ //Sort mean humidity_in from driest to humidest
 void bubbleSorthumin(s s_var[], int n)
 {
 	int i, j;
@@ -78,7 +78,7 @@ void bubbleSorthumin(s s_var[], int n)
 	}
 }
 
- //sort mean humidity_in from driest to humidest
+ //Sort mean humidity_in from driest to humidest
 void bubbleSorthumout(s s_var[], int n)
 {
 	int i, j;
@@ -94,7 +94,7 @@ void bubbleSorthumout(s s_var[], int n)
 	}
 }
 
-  //sort moldIndex_out from lowest risk to highest risk
+  //Sort moldIndex_out from lowest risk to highest risk
 void bubbleSortmold(s s_var[], int n)
 {
 	int i, j;
